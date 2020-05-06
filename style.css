@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: rgba(0, 0, 0, 0.623);
+    color: cornsilk;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#search-form, #list {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.container {
+    padding-top: 10px;
+    margin-top: 10px;
+    height: 50%;
+}
+
+#main-card {
+    height: 100%;
+}
+
+.row {
+    margin: 0;
+}
+
+.days-card {
+    float: right;
+}
