@@ -1,6 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #C1BEBA;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.712);
+    font-family: 'Kanit', sans-serif;
 }
 
 #header {
@@ -34,4 +38,18 @@ body {
 
 .days-card {
     float: right;
+}
+
+.mini-card {
+    width: 60px;
+    height: 60px;
+}
+
+.card {
+    border-radius: 20px;
+    background-color: #87CEEB;
+}
+
+#city-input {
+    border-radius: 5px;
 }
