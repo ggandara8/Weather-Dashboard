@@ -5,6 +5,7 @@ $("#search-btn").on("click", function(){
       
 var city = $("#city-input").val();
 var cityArr = [];
+cityArr.push(city);
 $("#city-input").val("");
 localStorage.setItem("city", cityArr); // store
 
