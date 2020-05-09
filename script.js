@@ -5,9 +5,7 @@ $("#search-btn").on("click", function(){
       
 var city = $("#city-input").val();
 var cityArr = [];
-cityArr.push(city); //--------------------------------- ??????
 $("#city-input").val("");
-console.log(cityArr);
 localStorage.setItem("city", cityArr); // store
 
 //adding to the list
@@ -25,7 +23,6 @@ $.ajax({
     url: queryURL,
     method: "GET"
 }).then(function(response){
-    console.log(response);
 
 var mainCityDate = city + " (" + moment().format("MM-D-YYYY") + ") " + response.list[0].weather[0].main;
 $("#title-card").html(city + " (" + moment().format("MM-D-YYYY") + ") " + response.list[0].weather[0].main);
@@ -57,7 +54,7 @@ for (var i = 0; i < 40; i++) {
     var momentDate2 = moment().add(2, "day").format("YYYY-MM-DD 21:00:00");
     var momentDate3 = moment().add(3, "day").format("YYYY-MM-DD 21:00:00");
     var momentDate4 = moment().add(4, "day").format("YYYY-MM-DD 21:00:00");
-    var momentDate5 = moment().add(5, "day").format("YYYY-MM-DD 18:00:00");
+    var momentDate5 = moment().add(5, "day").format("YYYY-MM-DD 00:00:00");
 //------------------------------------------------------------------------------------------------------------
 if (responseDate === momentDate1) {
     
